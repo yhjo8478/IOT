@@ -1,0 +1,11 @@
+Reference, Value, Footprint, Datasheet
+"SW1","SW_PUSH","Buttons_Switches_SMD:SW_SPST_SKQG","","",""
+"U1","ESP-01v090","ESP8266:ESP-01","","",""
+"C1","100uF","Capacitors_SMD:c_elec_6.3x4.5","","",""
+"W2","TEST_1P","Measurement_Points:Measurement_Point_Round-SMD-Pad_Small","","",""
+"W1","TEST_1P","Measurement_Points:Measurement_Point_Round-SMD-Pad_Small","","",""
+"R1","100k","Resistors_ThroughHole:Resistor_Horizontal_RM10mm","","",""
+"R2","10k","Resistors_ThroughHole:Resistor_Horizontal_RM10mm","","",""
+"BT2","Battery","w_battery_holders:keystone_3009","","",""
+"BT1","Battery","w_battery_holders:keystone_3009","","",""
+"C2","1000uf","Capacitors_SMD:c_elec_10x10","","",""

@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MQTT_RETRY_INTERVAL_MS	lib/Thingplus.cpp	184;"	d	file:
+THINGPLUS_H	lib/Thingplus.h	7;"	d
+THINGPLUS_TOPIC_LEN	lib/Thingplus.h	18;"	d
+THINGPLUS_VALUE_MESSAGE_LEN	lib/Thingplus.h	17;"	d
+Thingplus	lib/Thingplus.cpp	/^ThingplusClass Thingplus;$/;"	v
+ThingplusClass	lib/Thingplus.h	/^class ThingplusClass {$/;"	c
+actuatingCallback	lib/Thingplus.h	/^	char* (*actuatingCallback)(const char *id, const char *cmd, const char *options);$/;"	m	class:ThingplusClass
+apikey	lib/Thingplus.h	/^	const char *apikey;$/;"	m	class:ThingplusClass
+begin	lib/Thingplus.cpp	/^void ThingplusClass::begin(byte mac[], const char *apikey) {$/;"	f	class:ThingplusClass
+callbackSubscribe	lib/Thingplus.cpp	/^void callbackSubscribe(char *topic, uint8_t *payload, unsigned int length) {$/;"	f
+client	lib/Thingplus.h	/^	Client *client;$/;"	m	class:ThingplusClass
+connect	lib/Thingplus.cpp	/^void ThingplusClass::connect(void)$/;"	f	class:ThingplusClass
+disconnect	lib/Thingplus.cpp	/^void Thingplus::disconnect(void)$/;"	f	class:Thingplus
+gatewayId	lib/Thingplus.h	/^	char gatewayId[13];$/;"	m	class:ThingplusClass
+gatewayStatusPublish	lib/Thingplus.cpp	/^bool ThingplusClass::gatewayStatusPublish(bool on, time_t durationSec)$/;"	f	class:ThingplusClass
+keepConnect	lib/Thingplus.cpp	/^void ThingplusClass::keepConnect() {$/;"	f	class:ThingplusClass
+loop	lib/Thingplus.cpp	/^bool ThingplusClass::loop(void)$/;"	f	class:ThingplusClass
+loop	src/main.cpp	/^void loop() {$/;"	f
+mac	lib/Thingplus.h	/^	byte *mac;$/;"	m	class:ThingplusClass
+mqtt	lib/Thingplus.h	/^	PubSubClient mqtt;$/;"	m	class:ThingplusClass
+mqttStatusPublish	lib/Thingplus.cpp	/^bool ThingplusClass::mqttStatusPublish(bool on)$/;"	f	class:ThingplusClass
+port	lib/Thingplus.cpp	/^const int port = 1883;$/;"	v
+sensorStatusPublish	lib/Thingplus.cpp	/^void ThingplusClass::sensorStatusPublish(const char *id, bool on, time_t durationSec)$/;"	f	class:ThingplusClass
+server	lib/Thingplus.cpp	/^const char *server = "dmqtt.thingplus.net";$/;"	v
+setActuatingCallback	lib/Thingplus.cpp	/^void ThingplusClass::setActuatingCallback(char* (*cb)(const char* id, const char* cmd, const char* options)) {$/;"	f	class:ThingplusClass
+setup	src/main.cpp	/^void setup()$/;"	f
+statusPublish	lib/Thingplus.cpp	/^bool ThingplusClass::statusPublish(const char *topic, bool on, time_t durationSec)$/;"	f	class:ThingplusClass
+valuePublish	lib/Thingplus.cpp	/^void ThingplusClass::valuePublish(const char *id, char *value) {$/;"	f	class:ThingplusClass
+valuePublish	lib/Thingplus.cpp	/^void ThingplusClass::valuePublish(const char *id, float value) {$/;"	f	class:ThingplusClass
+valuePublish	lib/Thingplus.cpp	/^void ThingplusClass::valuePublish(const char *id, int value) {$/;"	f	class:ThingplusClass

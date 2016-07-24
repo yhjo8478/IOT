@@ -1,0 +1,211 @@
+(pcb /home/younghyun/work/kicad/ESP8266/button/button.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.2+e4-6225~38~ubuntu16.04.1-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 74407.8 -39819.8 117554 -68138.7)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component "Buttons_Switches_ThroughHole:SW_PUSH-12mm"
+      (place SW1 110320 -48539.4 front 90 (PN SW_PUSH))
+    )
+    (component Capacitors_SMD:c_elec_10x10
+      (place C2 80982.8 -47294.8 front 180 (PN 1000uF))
+    )
+    (component Resistors_ThroughHole:Resistor_Horizontal_RM7mm
+      (place R1 106764 -60452 front 0 (PN 10))
+    )
+    (component "ESP8266:ESP-01"
+      (place U1 99296.2 -43294.3 front 270 (PN "ESP-01v090"))
+    )
+    (component "Measurement_Points:Measurement_Point_Round-TH_Small"
+      (place W1 106942 -64630.3 front 0 (PN TEST_1P))
+      (place W2 114231 -65163.7 front 0 (PN TEST_1P))
+      (place W3 77571.6 -55245 front 0 (PN VBAT))
+      (place W4 82638.9 -55283.1 front 0 (PN GBAT))
+    )
+  )
+  (library
+    (image "Buttons_Switches_ThroughHole:SW_PUSH-12mm"
+      (outline (path signal 150  4579.05 0  4354.94 -1415  3704.53 -2691.5  2691.5 -3704.53
+            1415 -4354.94  0 -4579.05  -1415 -4354.94  -2691.5 -3704.53
+            -3704.53 -2691.5  -4354.94 -1415  -4579.05 0  -4354.94 1415
+            -3704.53 2691.5  -2691.5 3704.53  -1415 4354.94  0 4579.05  1415 4354.94
+            2691.5 3704.53  3704.53 2691.5  4354.94 1415))
+      (outline (path signal 150  -6350 6350  6350 6350))
+      (outline (path signal 150  6350 6350  6350 -6350))
+      (outline (path signal 150  6350 -6350  -6350 -6350))
+      (outline (path signal 150  -6350 -6350  -6350 6350))
+      (pin Oval[A]Pad_3048x1727.2_um 1 6350 2540)
+      (pin Oval[A]Pad_3048x1727.2_um 2 6350 -2540)
+      (pin Oval[A]Pad_3048x1727.2_um 1@1 -6350 2540)
+      (pin Oval[A]Pad_3048x1727.2_um 2@1 -6350 -2540)
+    )
+    (image Capacitors_SMD:c_elec_10x10
+      (outline (path signal 50  -6350 5600  6350 5600))
+      (outline (path signal 50  6350 5600  6350 -5600))
+      (outline (path signal 50  6350 -5600  -6350 -5600))
+      (outline (path signal 50  -6350 -5600  -6350 5600))
+      (outline (path signal 150  -4826 -1016  -4826 1016))
+      (outline (path signal 150  -4699 1397  -4699 -1524))
+      (outline (path signal 150  -4572 -1778  -4572 1778))
+      (outline (path signal 150  -4445 2159  -4445 -2159))
+      (outline (path signal 150  -4318 -2413  -4318 2413))
+      (outline (path signal 150  -4191 2540  -4191 -2540))
+      (outline (path signal 150  -5207 5207  -5207 -5207))
+      (outline (path signal 150  -5207 -5207  4445 -5207))
+      (outline (path signal 150  4445 -5207  5207 -4445))
+      (outline (path signal 150  5207 -4445  5207 4445))
+      (outline (path signal 150  5207 4445  4445 5207))
+      (outline (path signal 150  4445 5207  -5207 5207))
+      (outline (path signal 150  4572 0  3810 0))
+      (outline (path signal 150  4191 381  4191 -381))
+      (outline (path signal 150  4953 0  4710.58 -1530.56  4007.06 -2911.3  2911.3 -4007.06
+            1530.56 -4710.58  0 -4953  -1530.56 -4710.58  -2911.3 -4007.06
+            -4007.06 -2911.3  -4710.58 -1530.56  -4953 0  -4710.58 1530.56
+            -4007.06 2911.3  -2911.3 4007.06  -1530.56 4710.58  0 4953  1530.56 4710.58
+            2911.3 4007.06  4007.06 2911.3  4710.58 1530.56))
+      (pin Rect[T]Pad_4000.5x2400.3_um 1 4000.5 0)
+      (pin Rect[T]Pad_4000.5x2400.3_um 2 -4000.5 0)
+    )
+    (image Resistors_ThroughHole:Resistor_Horizontal_RM7mm
+      (outline (path signal 50  -1250 1500  8850 1500))
+      (outline (path signal 50  -1250 -1500  -1250 1500))
+      (outline (path signal 50  8850 1500  8850 -1500))
+      (outline (path signal 50  -1250 -1500  8850 -1500))
+      (outline (path signal 150  1270 1270  6350 1270))
+      (outline (path signal 150  6350 1270  6350 -1270))
+      (outline (path signal 150  6350 -1270  1270 -1270))
+      (outline (path signal 150  1270 -1270  1270 1270))
+      (pin Round[A]Pad_1998.98_um 1 0 0)
+      (pin Round[A]Pad_1998.98_um 2 7620 0)
+    )
+    (image "ESP8266:ESP-01"
+      (outline (path signal 152.4  -1778 3302  22860 3302))
+      (outline (path signal 152.4  22860 3302  22860 -10922))
+      (outline (path signal 152.4  22860 -10922  -1778 -10922))
+      (outline (path signal 152.4  -1778 -10922  -1778 3302))
+      (outline (path signal 152.4  1270 1270  -1270 1270))
+      (outline (path signal 152.4  -1270 1270  -1270 -1270))
+      (outline (path signal 50  -1750 1750  -1750 -9400))
+      (outline (path signal 50  4300 1750  4300 -9400))
+      (outline (path signal 50  -1750 1750  4300 1750))
+      (outline (path signal 50  -1750 -9400  4300 -9400))
+      (outline (path signal 152.4  -1270 -1270  -1270 -8890))
+      (outline (path signal 152.4  -1270 -8890  3810 -8890))
+      (outline (path signal 152.4  3810 -8890  3810 1270))
+      (outline (path signal 152.4  3810 1270  1270 1270))
+      (pin Rect[A]Pad_1727.2x1727.2_um 1 0 0)
+      (pin Oval[A]Pad_1727.2x1727.2_um 2 2540 0)
+      (pin Oval[A]Pad_1727.2x1727.2_um 3 0 -2540)
+      (pin Oval[A]Pad_1727.2x1727.2_um 4 2540 -2540)
+      (pin Oval[A]Pad_1727.2x1727.2_um 5 0 -5080)
+      (pin Oval[A]Pad_1727.2x1727.2_um 6 2540 -5080)
+      (pin Oval[A]Pad_1727.2x1727.2_um 7 0 -7620)
+      (pin Oval[A]Pad_1727.2x1727.2_um 8 2540 -7620)
+    )
+    (image "Measurement_Points:Measurement_Point_Round-TH_Small"
+      (outline (path signal 50  1000 0  951.057 -309.017  809.017 -587.785  587.785 -809.017
+            309.017 -951.057  0 -1000  -309.017 -951.057  -587.785 -809.017
+            -809.017 -587.785  -951.057 -309.017  -1000 0  -951.057 309.017
+            -809.017 587.785  -587.785 809.017  -309.017 951.057  0 1000
+            309.017 951.057  587.785 809.017  809.017 587.785  951.057 309.017))
+      (pin Round[A]Pad_1500_um 1 0 0)
+    )
+    (padstack Round[A]Pad_1500_um
+      (shape (circle F.Cu 1500))
+      (shape (circle B.Cu 1500))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1998.98_um
+      (shape (circle F.Cu 1998.98))
+      (shape (circle B.Cu 1998.98))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_3048x1727.2_um
+      (shape (path F.Cu 1727.2  -660.4 0  660.4 0))
+      (shape (path B.Cu 1727.2  -660.4 0  660.4 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1727.2x1727.2_um
+      (shape (path F.Cu 1727.2  0 0  0 0))
+      (shape (path B.Cu 1727.2  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_4000.5x2400.3_um
+      (shape (rect F.Cu -2000.25 -1200.15 2000.25 1200.15))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1727.2x1727.2_um
+      (shape (rect F.Cu -863.6 -863.6 863.6 863.6))
+      (shape (rect B.Cu -863.6 -863.6 863.6 863.6))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins SW1-2 SW1-2@1 C2-2 U1-2 W4-1)
+    )
+    (net "Net-(R1-Pad1)"
+      (pins SW1-1 SW1-1@1 R1-1)
+    )
+    (net "Net-(U1-Pad1)"
+      (pins U1-1 W2-1)
+    )
+    (net "Net-(U1-Pad6)"
+      (pins U1-6)
+    )
+    (net "Net-(U1-Pad8)"
+      (pins U1-8 W1-1)
+    )
+    (net VCC
+      (pins C2-1 U1-3 U1-7 W3-1)
+    )
+    (net /SWT_IN
+      (pins R1-2 U1-4 U1-5)
+    )
+    (class kicad_default "" /SWT_IN GND "Net-(C1-Pad1)" "Net-(R1-Pad1)" "Net-(U1-Pad1)"
+      "Net-(U1-Pad6)" "Net-(U1-Pad8)" VCC
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

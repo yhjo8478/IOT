@@ -1,0 +1,231 @@
+
+(session button.ses
+  (base_design button.dsn)
+  (placement
+    (resolution um 10)
+    (component "Buttons_Switches_ThroughHole:SW_PUSH-12mm"
+      (place SW1 1103200 -485394 front 90)
+    )
+    (component Capacitors_SMD:c_elec_10x10
+      (place C2 809828 -472948 front 180)
+    )
+    (component Resistors_ThroughHole:Resistor_Horizontal_RM7mm
+      (place R1 1067640 -604520 front 0)
+    )
+    (component "ESP8266:ESP-01"
+      (place U1 992962 -432943 front 270)
+    )
+    (component "Measurement_Points:Measurement_Point_Round-TH_Small"
+      (place W1 1069420 -646303 front 0)
+      (place W2 1142310 -651637 front 0)
+      (place W3 775716 -552450 front 0)
+      (place W4 826389 -552831 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "4.0.2+e4-6225~38~ubuntu16.04.1-stable")
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:400_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2500
+            826389 -552831
+            849833 -529387
+            849833 -472948
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1128600 -548894
+            1128600 -530401
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1110644 -458343
+            1128600 -440387
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            992962 -458343
+            1110644 -458343
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1110644 -458343
+            1110644 -512445
+            1128600 -530401
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            849833 -472948
+            970183 -472948
+            981073 -462058
+            981073 -458343
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            992962 -458343
+            981073 -458343
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1128600 -421894
+            1128600 -440387
+          )
+        )
+      )
+      (net "Net-(R1-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1077800 -548894
+            1077800 -421894
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1067640 -604520
+            1077800 -594360
+            1077800 -548894
+          )
+        )
+      )
+      (net "Net-(U1-Pad1)"
+        (wire
+          (path B.Cu 2500
+            992962 -432943
+            992962 -444832
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1142310 -651637
+            1157390 -636557
+            1157390 -598504
+            1138523 -579637
+            1084772 -579637
+            1004851 -499716
+            1004851 -453005
+            996678 -444832
+            992962 -444832
+          )
+        )
+      )
+      (net "Net-(U1-Pad8)"
+        (wire
+          (path B.Cu 2500
+            1069420 -646303
+            916762 -493645
+            916762 -458343
+          )
+        )
+      )
+      (net VCC
+        (wire
+          (path F.Cu 2500
+            916762 -432943
+            928651 -432943
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            928651 -432943
+            928651 -436659
+            936824 -444832
+            947500 -444832
+            955673 -436659
+            955673 -432943
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            769823 -457694
+            794574 -432943
+            916762 -432943
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            967562 -432943
+            955673 -432943
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            769823 -472948
+            769823 -457694
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            769823 -472948
+            769823 -488203
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            775716 -552450
+            775716 -494096
+            769823 -488203
+          )
+        )
+      )
+      (net /SWT_IN
+        (wire
+          (path B.Cu 2500
+            967562 -458343
+            955673 -458343
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            942162 -432943
+            942162 -444832
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            942162 -444832
+            945877 -444832
+            955673 -454628
+            955673 -458343
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            967562 -458343
+            967562 -470232
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            967562 -470232
+            1101850 -604520
+            1143840 -604520
+          )
+        )
+      )
+    )
+  )
+)
