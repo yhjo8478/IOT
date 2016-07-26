@@ -49,10 +49,10 @@ static void _wifiInit(void)
 			Serial.print(ssid);
 			Serial.print(" PASSWD:");
 			Serial.println(password);
-			while (1) {
-				yield();
-			}
+
+			system_deep_sleep(0);
 		}
+
 		delay(100);
 	}
 
@@ -66,6 +66,8 @@ static void _buttonToggle() {
 	Thingplus.sensorStatusPublish(buttonId, true, 60 * 24 * 30);
 	int buttonValue = 1;
 	Thingplus.valuePublish(buttonId, buttonValue);
+
+	delay(100);
 	buttonValue = 0;
 	Thingplus.valuePublish(buttonId, buttonValue);
 }
@@ -77,10 +79,10 @@ static void _batteryGaugeSend() {
 	Thingplus.valuePublish(batteryId, batteryGauge);
 }
 
-void setup() 
-{
-	_serialInit();
+void setup() {
+	system_deep_sleep_set_option(0);
 
+	_serialInit();
 
 	uint8_t mac[6];
 	WiFi.macAddress(mac);
@@ -92,7 +94,6 @@ void setup()
 
 	Thingplus.begin(wifiClient, mac, apikey);
 	Thingplus.connect();
-	system_deep_sleep_set_option(0);
 }
 
 void loop() 
